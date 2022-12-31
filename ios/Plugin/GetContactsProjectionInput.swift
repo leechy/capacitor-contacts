@@ -112,6 +112,8 @@ public class GetContactsProjectionInput {
         // Image
         if self.image == true {
             projection.append(CNContactImageDataKey as CNKeyDescriptor)
+            projection.append(CNContactImageDataAvailableKey as CNKeyDescriptor)
+            projection.append(CNContactThumbnailImageDataKey as CNKeyDescriptor)
         }
 
         return projection
